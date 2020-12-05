@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 void main() {
-  return runApp(MaterialApp(
+  return runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: SplashWidget(),
+    home: new SplashWidget(),
   ));
 }
 
 class SplashWidget extends StatefulWidget {
-  SplashWidget({Key key}) : super(key: key);
+  // SplashWidget({Key key}) : super(key: key);
 
   @override
   _SplashWidgetState createState() => _SplashWidgetState();
@@ -45,7 +45,7 @@ class AppLoader extends StatelessWidget {
         title: Text('Dice Game'),
         backgroundColor: Colors.blue,
       ),
-      body: DicePage(),
+      body: new DicePage(),
     );
   }
 }
